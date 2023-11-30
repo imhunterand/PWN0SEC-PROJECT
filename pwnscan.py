@@ -524,7 +524,7 @@ class App(customtkinter.CTk):
         super().__init__()
 
         # configure window
-        self.title("Web Vulnerability PWN0SEC-Scanner")		#OSTEscanner
+        self.title("Web Vulnerability PWN0SEC-Scanner")		#PWN0SECscanner
 
         w, h = self.winfo_screenwidth(), self.winfo_screenheight()
         self.geometry("%dx%d+0+0" % (w, h))
@@ -1306,7 +1306,7 @@ class App(customtkinter.CTk):
                              #self.my_frame.vul_label[13][1].configure(text_color="red",text=int(self.my_frame.vul_label[13][1].cget("text"))+all_resaults[i][1])
                              self.my_frame.vul_label[13][4].configure(text=self.my_frame.vul_label[13][4].cget("text")+all_resaults[i][1],text_color="red")     
                   
-                  #TODOOO ::::: PRINT RESAULT In SKIP FIsh Tab View like wapiti (bring the requast tags from resaults (modifie ostescanner code ,major work needed aghhh))
+                  #TODOOO ::::: PRINT RESAULT In SKIP FIsh Tab View like wapiti (bring the requast tags from resaults (modifie PWN0SECscanner code ,major work needed aghhh))
             self.my_frameSkipfish.label3.configure(state="normal",command=lambda: self.Open_skipfish_site(name) )
             
             print_skipfich_Result11 = threading.Thread(target=self.print_skipfich_Result1,args=([all_resaults]))
